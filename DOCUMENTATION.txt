@@ -1,1 +1,15 @@
-hi
+#DOCUMENTATION
+Hello welcome to the documentation page. :)
+
+
+Chapter 1
+The "EnterSession()" command can be used to start the programing session of programming your drone.
+You need to use this command to use any of the other commands eccept for the kill command.
+To takeoff you need to use the "takeoff()" command.
+To land you need to use the "land()" command. This is essential to flying your drone or else you will not be able to 
+
+Chapter 2
+Incomplete
+
+Chapter 3
+Incomplete
