@@ -1,6 +1,9 @@
 #DOCUMENTATION
 Hello welcome to the documentation page. :)
 
+#Getting Started
+First you need to download these files to the directory you want then you have to write the python file you want
+in that same directory. For help type helpt()
 
 Chapter 1 Basic Starting Stuff
 The "EnterSession()" command can be used to start the programing session of programming your drone.
