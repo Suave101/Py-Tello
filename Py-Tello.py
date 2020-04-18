@@ -96,3 +96,8 @@ def estop(cc):
 def kill(n, cc, k):
     if cc == k or cc == pw:
         os.remove(n)
+
+
+def helpt():
+    x = open("DOCUMENTATION.txt", "r")
+    print(x.read())
