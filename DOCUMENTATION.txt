@@ -2,14 +2,71 @@
 Hello welcome to the documentation page. :)
 
 
-Chapter 1
+Chapter 1 Basic Starting Stuff
 The "EnterSession()" command can be used to start the programing session of programming your drone.
 You need to use this command to use any of the other commands eccept for the kill command.
+To end the program you need to run the ExitSession() command.
 To takeoff you need to use the "takeoff()" command.
 To land you need to use the "land()" command. This is essential to flying your drone or else you will not be able to 
 
-Chapter 2
-Incomplete
+Chapter 2 Basic Moving
+When flying your drone you need to program it to move. The move() command makes your drone move, it requires you to
+put the direction and amount inside the command for example:
+'''
+EnterSession()
+takeoff()
+move('forward', 100)
+move('back', 100)
+move('left', 100)
+move('right', 100)
+move('up', 10)
+move('down', 10)
+land()
+ExitSession()
+# These are all the possible commands
+'''
 
-Chapter 3
-Incomplete
+Chapter 3 Tricks and Rotation
+To rotate you use the rotate() command for example:
+'''
+EnterSession()
+takeoff()
+# These are the two available rotation methods:
+# Counter Clockwise
+rotate('ccw', 90)
+# Clockwise
+rotate('cw', 90)
+land()
+ExitSession()
+'''
+Sometimes you may want to impress you friends with your programming skills, to do this
+you may want to do a trick. The only trick available right now is the flip() command
+This is how it works:
+'''
+EnterSession()
+takeoff()
+flip('fowrward')
+flip('backward')
+flip('left')
+flip('right')
+land()
+ExitSession()
+'''
+
+Chapter 4 Advanced Stuff
+If you want to crash your drone as a prank then this is the code for you:
+'''
+EnterSession()
+takeoff()
+estop('GOHSU2020')
+land()
+ExitSession()
+'''
+The pre-set clerence code to crash the drone is "GOHSU2020" you can change it in the
+program named Py-Tello.py in the second line of code where there is a var named pw.
+
+This is the command you may not want to use, it is the kill() command
+you can delete any file in the directory the librarys in. You need the file name
+then clerence codes, if you would like to bypass the clerence codes you will need
+to create a diffrent one that the set one in the second field then you need to type
+the exact same thing in the third. No Example due to level of danger.
