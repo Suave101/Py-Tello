@@ -5,4 +5,4 @@ This is an in directory python library.
 - This Version requires Node.js
 ### Py-Tello 2.0
 - This program is in python
-- This program requires python in path
+- This program requires python 3
