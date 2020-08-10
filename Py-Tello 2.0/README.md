@@ -3,4 +3,4 @@ For this program to work you need to have python 3 installed. To install the pac
 
 `pip install pytello-hsu`
 
-Go to documentation.md to see the commands and their syntax.
+Go to [documentation.md](https://github.com/Suave101/Py-Tello/blob/master/Py-Tello%202.0/DOCUMENTATION.md) to see the commands and their syntax.
