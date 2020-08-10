@@ -52,7 +52,7 @@
 ## Advanced Command's
 ### send()
 - Takes 1 argument
-  - Argument
+  - Argument x is what it sends to the drone 
 - Sends information to the aircraft
 - Sendable information can be found at: https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf
 ### eland()
@@ -68,3 +68,7 @@
 recvthread = threading.Thread(target=recv)
 
 recvthread.start()
+### ipconfig()
+- Takes one argument
+  - The first argument is the ip address of the drone in the form of a string
+- Configures the server communication ip address.
