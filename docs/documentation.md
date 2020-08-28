@@ -71,3 +71,34 @@ recvthread.start()
 
 ## Swarm Commander Info
 The swarm commander is a part of the package that lets you swarm drones. The following program is an example of how swarm commander works.
+
+```
+import hsupytello.Swarm_Nest as swarmnest
+import time as t
+
+drone1 = swarmnest.drone("192.168.56.1")
+drone2 = swarmnest.drone("192.168.56.2")
+drone3 = swarmnest.drone("192.168.56.3")
+
+drone1.tello_address = "192.168.56.2"
+drone2.tello_address = "192.168.56.3"
+drone3.tello_address = "192.168.56.1"
+
+drone1.takeoff()
+drone2.takeoff()
+drone3.takeoff()
+drone1.up(100)
+drone2.forward(100)
+drone3.backward(100)
+drone1.down(100)
+drone2.backward(100)
+drone3.forward(100)
+print("Drone 1 Crash Landing")
+drone1.eland()
+t.sleep(2)
+print("Drone 2 Crash Landing")
+drone2.eland()
+t.sleep(2)
+print("Drone 3 Regular Landing")
+drone3.land()
+```
