@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
+<style>
+body {background-color: grey;font-family: Arial, Helvetica, sans-serif;}
+h1   {color: black;font-family: Arial, Helvetica, sans-serif;border-radius: 25px;
+  border: 2px solid #000000;
+}
+p    {font-family: Arial, Helvetica, sans-serif;color: light_grey; text-align: justify;}
+</style>
 <center>
 <h1>Documentation</h1>
 </center>
@@ -69,9 +76,43 @@
 <h3>recv()</h3>
 - recives information from drone and prints it in cli<br>
 - Use the following command if you do not use "init()" command to recive informantion from the drone<br>
-
+<br>
 recvthread = threading.Thread(target=recv)<br>
-
-recvthread.start()</p1>
+<br>
+recvthread.start()<br>
+<h2>Swarm Commander Info</h2>
+The swarm commander is a part of the package that lets you swarm drones. The following program is an example of how swarm commander works.
+<br>
+<br>
+import hsupytello.Swarm_Nest as swarmnest<br>
+import time as t<br>
+<br>
+drone1 = swarmnest.drone("192.168.56.1")<br>
+drone2 = swarmnest.drone("192.168.56.2")<br>
+drone3 = swarmnest.drone("192.168.56.3")<br>
+<br>
+drone1.tello_address = "192.168.56.2"<br>
+drone2.tello_address = "192.168.56.3"<br>
+drone3.tello_address = "192.168.56.1"<br>
+<br>
+drone1.takeoff()<br>
+drone2.takeoff()<br>
+drone3.takeoff()<br>
+drone1.up(100)<br>
+drone2.forward(100)<br>
+drone3.backward(100)<br>
+drone1.down(100)<br>
+drone2.backward(100)<br>
+drone3.forward(100)<br>
+print("Drone 1 Crash Landing")<br>
+drone1.eland()<br>
+t.sleep(2)<br>
+print("Drone 2 Crash Landing")<br>
+drone2.eland()<br>
+t.sleep(2)<br>
+print("Drone 3 Regular Landing")<br>
+drone3.land()<br>
+<br>
+</p1>
 </body>
 </html>
