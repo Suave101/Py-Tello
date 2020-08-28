@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h1>Documentation</h1>
+</center>
+<h3>takeoff()</h3>
+<dt>- Takes no arguments</dt>
+<dt>- Makes the aircraft takeoff</dt>
+<h3>land()</h3>
+<dt>- Takes no arguments</dt>
+<dt>- Makes aircraft land</dt>
+<h3>up(x)</h3>
+<dt>- Takes 1 argument:</dt>
+<dd>- Argument x is how many centimeters up the drone goes(takes string 20 through 500)</dd>
+<dt>- Makes aircraft land</dt>
+<dt>- Makes the aircraft go up x centimeters</dt>
+<h3>down(x)</h3>
+- Takes 1 argument:<br>
+  - Argument x is how many centimeters down the drone goes(takes string 20 through 500)<br>
+- Makes the aircraft go down x centimeters<br>
+<h3>left(x)</h3>
+- Takes 1 argument:<br>
+  - Argument x is how many centimeters left the drone goes(takes string 20 through 500)<br>
+- Makes the aircraft go left x centimeters<br>
+<h3>right(x)</h3>
+- Takes 1 argument:<br>
+  - Argument x is how many centimeters right the drone goes(takes string 20 through 500)<br>
+- Makes the aircraft go right x centimeters<br>
+<h3>forward(x)</h3>
+- Takes 1 argument:<br>
+  - Argument x is how many centimeters forward the drone goes(takes string 20 through 500)<br>
+- Makes the aircraft go forward x centimeters<br>
+<h3>back(x)</h3>
+- Takes 1 argument:<br>
+  - Argument x is how many centimeters back the drone goes(takes string 20 through 500)<br>
+- Makes the aircraft go back x centimeters<br>
+<h3>clockwise(degrees)</h3>
+- Takes 1 argument:<br>
+  - Argument degrees is how many degrees clockwise the drone goes(takes string 1 through 360)<br>
+- Makes the aircraft go clockwise degrees degrees<br>
+<h3>counterclockwise(degrees)</h3>
+- Takes 1 argument:<br>
+  - Argument degrees is how many degrees counterclockwise the drone goes(takes string 1 through 360)<br>
+- Makes the aircraft go counterclockwise degrees degrees<br>
+<h3>flip()</h3>
+- Takes 1 argument:<br>
+  - Argument x is the direction the drone goes(takes string "l" is left, "r" is right, "f" is forward, and "b" is backward)<br>
+- Makes the aircraft go up x centimeters<br>
+<h3>speed()</h3>
+- Takes 1 argument:<br>
+  - Argument x is how many centimeters per second the drone goes(takes string 10 through 100)<br>
+- Makes the aircraft go x centimeters per second<br>
+<h3>init()</h3>
+- Takes no arguments<br>
+- Makes the program start communicating with the drone<br>
+<h2>Advanced Command's</h2>
+<h3>send()</h3>
+- Takes 1 argument<br>
+  - Argument<br>
+- Sends information to the aircraft<br>
+- Sendable information can be found at: https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf<br>
+<h3>eland()</h3>
+- Takes no arguments<br>
+- Cuts power to all motors of the aircraft<br>
+<h3>command()</h3>
+- Takes no arguments<br>
+- Puts the drone in command mode(not required if using "init()" command)<br>
+<h3>recv()</h3>
+- recives information from drone and prints it in cli<br>
+- Use the following command if you do not use "init()" command to recive informantion from the drone<br>
+
+recvthread = threading.Thread(target=recv)<br>
+
+recvthread.start()</p1>
+</body>
+</html>
